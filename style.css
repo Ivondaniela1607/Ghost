@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  background-color: #e0c3fc;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.head {
+  width: 160px;
+  height: 170px;
+  border: 1px #000000 solid;
+  background-color: #ffddd2;
+  margin-top: 80px;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  
+}
+
+.heart {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  transform: rotate(30deg);
+  margin-top: 35px;
+  margin-left: 115px;
+  position: relative;
+  
+}
+
+.heart:before,
+.heart::after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+}
+
+.heart:before {
+  top: 0;
+  left: -10px;
+}
+
+.heart:after {
+  top: -10px;
+}
+
+.container-eyes {
+  margin-top: 15px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.eye {
+  height: 25px;
+  width: 25px;
+  border: 1px #000000 solid;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.pupila {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.nose {
+  width: 30px;
+  height: 30px;
+  border-bottom: 3px black solid;
+  border-top: transparent;
+  border-radius: 0 0 100px 100px;
+
+}
+
+.container-bracitos {
+  margin-top: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bracito {
+  height: 25px;
+  width: 25px;
+  border: 1px black solid;
+  border-top: transparent;
+  border-radius: 0 0 100px 100px;
+}
+
+.one {
+  transform: rotate(-35deg);
+}
+
+.two {
+  transform: rotate(35deg);
+}
+
+.container-paticas {
+  margin-top: 15px;
+  height: 40px;
+  display: flex;
+  margin-top: 15px;
+  width: 160px;
+  position: relative;
+  left: -1px;
+  right: -7px;
+}
+
+.paticas {
+  border: 1px #000000 solid;
+  width: 65.5px;
+  height: 40px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: #ffddd2;
+  border-top: transparent;
+}
+
+
+
+
+
